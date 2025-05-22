@@ -1,0 +1,164 @@
+<div align="center">
+  <img src="./public/images/icons/Python-logo-notext.svg.png" width="200" alt="Unity Logo" />
+</div>
+
+# First Project AI
+
+# 🍷 Wine Quality Prediction Application 🖥️
+
+<div align="center">
+  <img src="./public/images/photos/Vino-para-quedarse-Foto-destacada.png" width="400" alt="Unity Logo" />
+</div>
+
+
+This repository contains the details of the Unity game
+
+## Contents
+
+
+### 🎯 Objective
+
+Develop a graphical user interface (GUI) application that allows a user to input the physicochemical parameters of a wine and obtain a prediction of its quality — both as a numerical score and a qualitative category — using a Machine Learning model. An essential requirement of the application is its ability to handle missing input values gracefully. 🤖
+
+### 📊 Dataset
+
+*Wine Quality Dataset* (available at the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wine+Quality)). This dataset contains physicochemical measurements of wines, including:
+
+- **Fixed Acidity**
+- **Volatile Acidity**
+- **Citric Acid**
+- **Residual Sugar**
+- **Chlorides**
+- **Free Sulfur Dioxide**
+- **Total Sulfur Dioxide**
+- **Density**
+- **pH**
+- **Sulphates**
+- **Alcohol**
+
+and a quality rating (ranging from 0 to 10). 📈
+
+### ❓ The Missing Data Challenge
+
+Although the standard Wine Quality Dataset does not include missing values, in real-world scenarios it is very likely that some physicochemical measurements may be absent when evaluating a wine. Therefore, a fundamental aspect of this application is its capacity to manage the absence of one or more input values provided by the user. 🤷‍♂️
+
+## Requirements
+
+* Python
+* Dataset: The dataset was provided in the following link [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
+
+## Installation
+
+1. Clone the project on your computer:
+    ```bash
+    git clone https://github.com/C102002/proyecto-ia-1
+    ```
+
+2. Create the Python virtual environment
+
+    ```bash
+    # Run the following command to create a virtual environment in the project directory:
+    python -m venv venv
+    ```
+
+3. Activate the virtual environment
+
+    ```bash
+    # Windows (using Command Prompt):
+    venv\Scripts\activate
+
+    # Windows (using PowerShell):
+    .\venv\Scripts\activate.ps1
+
+    # macOS and Linux:
+    source venv/bin/activate
+    ```
+
+4. Install the dependencies
+
+    ```bash
+    # Run the following command:
+    pip install -r requirements.txt
+    ```
+
+5. Update dependencies
+
+    ```bash
+    # Run the following command to update the requirements file:
+    pip freeze > requirements.txt
+    ```
+
+6. Deploy the app
+
+    ```bash
+    streamlit run .\app\__init__.py
+    ```
+
+## Contributions
+
+<table align="center">
+    <tbody>
+        <tr>
+            <td align="center">
+                <a href="https://github.com/Fussita" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/110612202?v=4" width="150px;" alt="" style="max-width:100%;">
+                    <br>
+                    <sub><b>Hualong Chiang</b></sub>
+                </a>
+                <br>
+                <a href="" title="Commits">
+                    <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/C102002" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/116277334?v=4" width="150px;" alt="" style="max-width:100%;">
+                    <br>
+                    <sub><b>Alfredo Fung</b></sub>
+                </a>
+                <br>
+                <a href="" title="Commits">
+                    <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/DanielBortot" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/103535845?v=4" width="150px;" alt="" style="max-width:100%;">
+                    <br>
+                    <sub><b>Daniel Borot</b></sub>
+                </a>
+                <br>
+                <a href="" title="Commits">
+                    <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>
+                </a>
+            </td>
+            <!-- add other members -->
+                        <td align="center">
+                <a href="https://github.com/DanielBortot" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/103535845?v=4" width="150px;" alt="" style="max-width:100%;">
+                    <br>
+                    <sub><b> Juan Perdomo</b></sub>
+                </a>
+                <br>
+                <a href="" title="Commits">
+                    <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/DanielBortot" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/103535845?v=4" width="150px;" alt="" style="max-width:100%;">
+                    <br>
+                    <sub><b> Gabriela Martinez</b></sub>
+                </a>
+                <br>
+                <a href="" title="Commits">
+                    <g-emoji class="g-emoji" alias="book" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png">📖</g-emoji>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+## License
+
+This project is under Apache license. See the [LICENSE](LICENSE) file for more details.
