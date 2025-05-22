@@ -10,11 +10,9 @@
   <img src="./public/images/photos/Vino-para-quedarse-Foto-destacada.png" width="400" alt="Unity Logo" />
 </div>
 
-
 This repository contains the details of the Unity game
 
 ## Contents
-
 
 ### 🎯 Objective
 
@@ -22,7 +20,7 @@ Develop a graphical user interface (GUI) application that allows a user to input
 
 ### 📊 Dataset
 
-*Wine Quality Dataset* (available at the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wine+Quality)). This dataset contains physicochemical measurements of wines, including:
+_Wine Quality Dataset_ (available at the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wine+Quality)). This dataset contains physicochemical measurements of wines, including:
 
 - **Fixed Acidity**
 - **Volatile Acidity**
@@ -44,55 +42,71 @@ Although the standard Wine Quality Dataset does not include missing values, in r
 
 ## Requirements
 
-* Python
-* Dataset: The dataset was provided in the following link [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
+- Python
+- Dataset: The dataset was provided in the following link [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
 ## Installation
 
 1. Clone the project on your computer:
-    ```bash
-    git clone https://github.com/C102002/proyecto-ia-1
-    ```
+
+   ```bash
+   git clone https://github.com/C102002/proyecto-ia-1
+   ```
 
 2. Create the Python virtual environment
 
-    ```bash
-    # Run the following command to create a virtual environment in the project directory:
-    python -m venv venv
-    ```
+   ```bash
+   # Run the following command to create a virtual environment in the project directory:
+   python -m venv venv
+   ```
 
 3. Activate the virtual environment
 
-    ```bash
-    # Windows (using Command Prompt):
-    venv\Scripts\activate
+   ```bash
+   # Windows (using Command Prompt):
+   venv\Scripts\activate
 
-    # Windows (using PowerShell):
-    .\venv\Scripts\activate.ps1
+   # Windows (using PowerShell):
+   .\venv\Scripts\activate.ps1
 
-    # macOS and Linux:
-    source venv/bin/activate
-    ```
+   # macOS and Linux:
+   source venv/bin/activate
+   ```
 
 4. Install the dependencies
 
-    ```bash
-    # Run the following command:
-    pip install -r requirements.txt
-    ```
+   ```bash
+   # Run the following command:
+   pip install -r requirements.txt
+   ```
 
 5. Update dependencies
 
-    ```bash
-    # Run the following command to update the requirements file:
-    pip freeze > requirements.txt
-    ```
+   ```bash
+   # Run the following command to update the requirements file:
+   pip freeze > requirements.txt
+   ```
 
 6. Deploy the app
 
-    ```bash
-    streamlit run .\app\__init__.py
-    ```
+   ```bash
+   streamlit run .\app\__init__.py
+   ```
+
+   ```bash
+   # It appears something like this
+   (venv) PS C:\your-path> streamlit run .\app\__init__.py
+
+   You can now view your Streamlit app in your browser.
+
+   Local URL: http://localhost:8501
+   Network URL: http://192.168.1.1.:8501
+
+   ```
+
+7. Example of the App
+
+![Video de ejemplo del tutorial](./public/videos/example/Streamlit%20-%20Google%20Chrome%202025-05-22%2000-12-12.gif)
 
 ## Contributions
 
@@ -125,7 +139,7 @@ Although the standard Wine Quality Dataset does not include missing values, in r
                 <a href="https://github.com/DanielBortot" rel="nofollow">
                     <img src="https://avatars.githubusercontent.com/u/103535845?v=4" width="150px;" alt="" style="max-width:100%;">
                     <br>
-                    <sub><b>Daniel Borot</b></sub>
+                    <sub><b>Daniel Bortot</b></sub>
                 </a>
                 <br>
                 <a href="" title="Commits">
@@ -133,9 +147,9 @@ Although the standard Wine Quality Dataset does not include missing values, in r
                 </a>
             </td>
             <!-- add other members -->
-                        <td align="center">
-                <a href="https://github.com/DanielBortot" rel="nofollow">
-                    <img src="https://avatars.githubusercontent.com/u/103535845?v=4" width="150px;" alt="" style="max-width:100%;">
+            <td align="center">
+                <a href="https://github.com/juanpj17" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/113471575?v=4" width="150px;" alt="" style="max-width:100%;">
                     <br>
                     <sub><b> Juan Perdomo</b></sub>
                 </a>
@@ -145,8 +159,8 @@ Although the standard Wine Quality Dataset does not include missing values, in r
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/DanielBortot" rel="nofollow">
-                    <img src="https://avatars.githubusercontent.com/u/103535845?v=4" width="150px;" alt="" style="max-width:100%;">
+                <a href="https://github.com/Gamartinez25" rel="nofollow">
+                    <img src="https://avatars.githubusercontent.com/u/129894339?v=4" width="150px;" alt="" style="max-width:100%;">
                     <br>
                     <sub><b> Gabriela Martinez</b></sub>
                 </a>
