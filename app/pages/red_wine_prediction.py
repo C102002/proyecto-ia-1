@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
+from PIL import Image
 
 from components.data_display.data_display import DataDisplay
 from components.pie_chart.pie_chart import PieChart
@@ -9,8 +10,17 @@ from components.histogram.histogram import Histogram
 from components.data_loader.data_loader import DataLoader
 from components.footer.footer import Footer
 
+# Define el título de la página y el favicon
+PAGE_TITLE = "Red Wine Quality Prediction"
+PAGE_ICON = "🍷"  # Puedes usar un emoji o la ruta a una imagen .png
+
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
+
 st.title("🍷 Red Wine Quality Prediction")
 st.write("Here you will find functionalities to predict the quality of red wine (not yet implemented).")
+
+image = Image.open("public/images/photos/red-wine.webp")
+st.image(image, caption="Red Wine examples", use_container_width=True)
 
 DATA_URL_RED: str = r'public/data/wine+quality/winequality-red.csv'
 

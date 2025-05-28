@@ -90,12 +90,12 @@ Although the standard Wine Quality Dataset does not include missing values, in r
 6. Deploy the app
 
    ```bash
-   streamlit run .\app\__init__.py
+   streamlit run .\app\main.py
    ```
 
    ```bash
    # It appears something like this
-   (venv) PS C:\your-path> streamlit run .\app\__init__.py
+   (venv) PS C:\your-path> streamlit run .\app\main.py
 
    You can now view your Streamlit app in your browser.
 
