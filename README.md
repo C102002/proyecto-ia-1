@@ -185,3 +185,7 @@ Although the standard Wine Quality Dataset does not include missing values, in r
 ## License
 
 This project is under Apache license. See the [LICENSE](LICENSE) file for more details.
+
+## Deployment
+
+https://proyecto-ia-1-bortot-chiang-fung-martines-perdomo.streamlit.app
