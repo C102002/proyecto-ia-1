@@ -53,11 +53,20 @@ Although the standard Wine Quality Dataset does not include missing values, in r
    git clone https://github.com/C102002/proyecto-ia-1
    ```
 
+>[!NOTE] 🚀  Python Version 3.11:  
+>  
+> - **Dependency Compatibility:** Using **Python 3.11** helps resolve known issues with data analysis and dependency conflicts with libraries like **Keras** and **TensorFlow**. ⚙️  
+> - **Bug Fixes & Stability:** This version includes essential fixes and improvements that enhance overall stability, ensuring smoother execution of your ML workflows. 🐛✅  
+> - **Optimized Performance:** With core runtime improvements, Python 3.11 delivers faster execution and better resource management during data processing and model training. ⚡💻  
+>  
+> Adopting Python 3.11 is crucial for building robust, efficient applications in data science and deep learning.
+
+
 2. Create the Python virtual environment
 
    ```bash
    # Run the following command to create a virtual environment in the project directory:
-   python -m venv venv
+   py -3.11 -m venv venv  
    ```
 
 3. Activate the virtual environment
@@ -176,3 +185,7 @@ Although the standard Wine Quality Dataset does not include missing values, in r
 ## License
 
 This project is under Apache license. See the [LICENSE](LICENSE) file for more details.
+
+## Deployment
+
+https://proyecto-ia-1-bortot-chiang-fung-martines-perdomo.streamlit.app
