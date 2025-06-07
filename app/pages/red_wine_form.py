@@ -5,9 +5,24 @@ import tensorflow as tf
 import os
 from utils.imputation_constants import imputation_values 
 
+#--- Constantes ----
 current_dir = os.path.dirname(__file__)
 scaler_path = os.path.join(current_dir, '..', 'scalers', 'scaler.pkl')
 model_path = os.path.join(current_dir, '..', 'models', 'red_wine_model.keras')
+
+max_values = {
+    'fixed acidity':20.0,
+    'volatile acidity': 3.0,
+    'citric acid': 3.0,
+    'residual sugar': 25.0,
+    'chlorides': 2.0,
+    'free sulfur dioxide': 80.0,
+    'total sulfur dioxide': 350.0,
+    'density': 2.0,
+    'pH': 7.0,
+    'sulphates': 5.0,
+    'alcohol': 20.0
+}
 
 
 st.title(' 🍷 Aplicación de Predicción de  Calidad del Vino Tinto 🍷')
@@ -56,11 +71,12 @@ with st.form("prediction_form"):
 
     for i, feature_name in enumerate(feature_names):
         with cols[i % 3]: 
-         
+            current_max_value = max_values.get(feature_name, None) 
             user_inputs[feature_name] = st.number_input(
                 f"{feature_name.replace('_', ' ').title()}:",
                 value=None, 
                 min_value=0.0, 
+                max_value=current_max_value,
                 format="%.3f", 
                 placeholder=f"Ej: {imputation_values.get(feature_name, 0.0):.3f}", # Usa .get() para seguridad
                 key=f"input_{feature_name}" 
@@ -110,12 +126,15 @@ if predict_button:
 
             if prediction.shape == (1, 1):
                 predicted_quality_score = round(prediction[0][0]) 
-                st.success(f"✨ **La predicción de calidad del vino es: {predicted_quality_score}**")
+                if predicted_quality_score>10:
+                    st.success(f"✨ **La predicción de calidad del vino es: 10**")
+                else:
+                    st.success(f"✨ **La predicción de calidad del vino es: {predicted_quality_score}**")
                 if 0 <= predicted_quality_score <= 4:
                     st.error("❌ **Calidad del Vino: ¡Malo!**")
                 elif 5 <= predicted_quality_score <= 7:
                     st.warning("⚠️ **Calidad del Vino: Regular**")
-                elif 8 <= predicted_quality_score <= 10:
+                elif 8 <= predicted_quality_score >= 10:
                     st.success("🏆 **Calidad del Vino: ¡Bueno!**")
                 else:
                     st.info("❓ **Calidad del Vino: Fuera de rango esperado (0-10).**")
