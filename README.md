@@ -98,24 +98,35 @@ Although the standard Wine Quality Dataset does not include missing values, in r
 
 6. Deploy the app
 
-   ```bash
-   streamlit run .\app\main.py
-   ```
+```bash
+streamlit run .\app\main.py
+```
 
-   ```bash
-   # It appears something like this
-   (venv) PS C:\your-path> streamlit run .\app\main.py
+```bash
+# It appears something like this
+(venv) PS C:\your-path> streamlit run .\app\main.py
 
-   You can now view your Streamlit app in your browser.
+You can now view your Streamlit app in your browser.
 
-   Local URL: http://localhost:8501
-   Network URL: http://192.168.1.1.:8501
+Local URL: http://localhost:8501
+Network URL: http://192.168.1.1.:8501
 
-   ```
+ ```
 
 7. Example of the App
 
-![Video de ejemplo del tutorial](./public/videos/example/Streamlit%20-%20Google%20Chrome%202025-05-22%2000-12-12.gif)
+![Video de ejemplo del tutorial](./public/videos/example/example.gif)
+
+1. Models 🍷
+
+Explore our interactive notebooks that showcase our modeling approaches for both red and white wine datasets. These notebooks provide a step-by-step guide through data preprocessing, feature engineering, and advanced regression techniques.
+
+- **Red Wine Model** 🍇  
+  [View the Red Wine Model Notebook](https://colab.research.google.com/drive/1a6zimMAp0suVrvqITeM1gKycN_lvJIs7?usp=sharing)
+
+- **White Wine Model** 🍾  
+  [View the White Wine Model Notebook](https://colab.research.google.com/drive/1v7tvhFsM7H9Te2CMSmm7W8I6mwn6c666?authuser=2)
+
 
 ## Contributions
 
