@@ -117,7 +117,7 @@ Network URL: http://192.168.1.1.:8501
 
 ![Video de ejemplo del tutorial](./public/videos/example/example.gif)
 
-1. Models 🍷
+8. Models 🍷
 
 Explore our interactive notebooks that showcase our modeling approaches for both red and white wine datasets. These notebooks provide a step-by-step guide through data preprocessing, feature engineering, and advanced regression techniques.
 
