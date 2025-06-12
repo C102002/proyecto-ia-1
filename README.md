@@ -125,7 +125,7 @@ Explore our interactive notebooks that showcase our modeling approaches for both
   [View the Red Wine Model Notebook](https://colab.research.google.com/drive/1a6zimMAp0suVrvqITeM1gKycN_lvJIs7?usp=sharing)
 
 - **White Wine Model** 🍾  
-  [View the White Wine Model Notebook](https://colab.research.google.com/drive/1v7tvhFsM7H9Te2CMSmm7W8I6mwn6c666?authuser=2)
+  [View the White Wine Model Notebook](https://colab.research.google.com/drive/1v7tvhFsM7H9Te2CMSmm7W8I6mwn6c666?usp=sharing)
 
 
 ## Contributions
